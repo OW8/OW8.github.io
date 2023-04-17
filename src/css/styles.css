@@ -4,52 +4,36 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background-color: #292fe0;
+  position: relative;
 }
 
 .logo {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  object-fit: contain; /* Change from 'cover' to 'contain' */
+  width: 60px;
+  height: 60px;
+  border-radius: 70%;
+  object-fit: cover;
   margin-right: 1rem;
   position: absolute;
   left: 10px;
   top: 10px;
 }
 
-
 nav {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 10vh;
-  position: relative;
 
-  
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  background-color: white;
-  height: 3px;
-  width: 100%;
 }
 
 .nav-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
+  width: 100%;
 }
 
 .nav-links li {
@@ -66,6 +50,38 @@ nav {
 .nav-links a:hover {
   color: #ccc;
 }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 
 /* Mobile Navigation */
 @media screen and (max-width: 768px) {
@@ -75,5 +91,56 @@ nav {
 
   .hamburger {
       display: flex;
+      position: absolute;
+      right: 10px;
+      top: 10px;
   }
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #242acd;
+}
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.footer-content {
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+.github-logo {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: blur(0.5px);
+  
+}
+.project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2e32a9;
 }

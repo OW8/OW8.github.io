@@ -7,8 +7,8 @@ This repository contains the source code for my digital portfolio, showcasing my
 The portfolio is divided into the following pages:
 
 1. **Welcome / About Me**: A brief introduction to who I am and what makes me unique, along with the purpose of the digital portfolio.
-2. **Resume/CV**: An embedded PDF version of my resume, with personal information removed for privacy.
-3. **Highlights of Interests/Extracurricular**: Showcasing my interests and extracurricular activities that set me apart from others.
+2. **Resume/CV**: An embedded PDF version of my resume.
+3. **Highlights of Interests/Extracurricular**: Showcasing my interests and extracurricular activities.
 4. **Highlights-Academic/Projects/Working**: A selection of my academic, project, and work experiences that demonstrate my skills and expertise.
 5. **Social Media**: Links to my LinkedIn, GitHub, and Twitter profiles, with explanations of how they support my personal brand.
 
