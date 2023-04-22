@@ -144,3 +144,47 @@ footer {
   height: 100vh;
   background-color: #2e32a9;
 }
+/* Add these rules to your existing CSS */
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img {
+  width: 32px; /* Adjust the size of the social media icons here */
+  height: 32px;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
