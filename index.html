@@ -1,66 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odda Wako's Digital Portfolio</title>
-  <link rel="stylesheet" href="../css/styles.css">
-</head>
-
-<body>
-<link rel ="stylesheet" href="../css/styles.css">
-  <header>
-
-    <nav class="navbar navbar-light bg-light justify-content-between">
-      <div class="logo-container">
-        <img src="../images/IMG_1461.JPG" alt="Logo" class="logo">
-      </div>
-      <ul class="nav-links">
-        <li><a href="../html/index.html">Home</a></li>
-        <li><a href="../html/resume.html">Resume</a></li>
-        <li><a href="../html/cv.html"> CV </a></li>
-        <li><a href="../html/interests.html">Interests</a></li>
-        <li><a href="../html/project.html">Projects</a></li>
-        <li><a href="../html/social-media.html">Social Media</a></li>
-      </ul>
-      <a href="https://github.com/ow8" target="_blank">
-        <img src="../images/github-mark/github-mark-white.png" alt="GitHub" width="32" height="32" class="github-logo">
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <style>
+      /* Add your custom styles here */
+      .social-icon:hover {
+        color: #7c92a9;
+        transition: color 0.3s ease-in-out;
+        size: 0caps;
+        background-color: black;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Odda</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
     </nav>
-  </header>
+    <section
+      id="home"
+      class="min-vh-100 d-flex align-items-center justify-content-center bg-primary text-red"
+      style="
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container text-center" data-aos="fade-up">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello, I'm Odda Wako</p></p>
+        <div class="d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/odda-wako-a7a722187/"
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            href="https://github.com/OW8"
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a
+            href="https://twitter.com/odwa5752"
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/odwa5752/"
+            target="_blank"
+            class="text-white"
+          >
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+        <a href="#portfolio" class="btn btn-outline-light mt-3">View my work</a>
+      </div>
+    </section>
 
-  <main>
-    <h1>Welcome to Odda Wako's Digital Portfolio</h1>
-    <p>
-      <!-- "Inviting and warm" welcome message -->
-      Hello and welcome to my digital portfolio! My name is Odda Wako and I am a recent computer science graduate with a passion for software development, machine learning, and problem-solving. I created this portfolio to showcase my skills, experiences, and projects as I embark on my journey as a professional in the tech industry.
-    </p>
-    <p>
-      <!-- Narrative of who you are / what makes you unique -->
-      Throughout my academic career, I have been fortunate enough to work on various projects, both individually and as part of a team, that have helped me develop strong technical and interpersonal skills. My unique combination of creativity and analytical thinking enables me to approach problems from different perspectives and develop innovative solutions.
-    </p>
-    <p>
-      <!-- Purpose of the digital portfolio with rationale -->
-      The purpose of this digital portfolio is to provide potential employers, colleagues, and other interested parties with a comprehensive overview of my background, skills, and accomplishments. I believe that this portfolio will serve as a valuable resource for networking and showcasing my abilities to those who may be interested in collaborating or working with me in the future.
-    </p>
-    <p>
-      <!-- Explanation of what visitors will find on the portfolio -->
-      In this portfolio, you will find detailed information about my education, work experience, and projects, as well as highlights of my interests and extracurricular activities. Additionally, you can explore my social media profiles to learn more about my personal brand and connect with me on various platforms.
-    </p>
+    <section id="about" class="min-vh-100" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="your_photo.jpg" alt="Your Photo" class="img-fluid" />
+          </div>
+          <div class="col-md-6">
+            <p>
+              Your bio goes here. Highlight your background, skills, and
+              accomplishments. Include your values, hobbies, or other personal
+              interests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="min-vh-100" data-aos="fade-up">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="service1_icon.png" alt="Service 1" class="img-fluid" />
+            <h3>Service 1</h3>
+            <p>Brief description of Service 1</p>
+          </div>
+          <div class="col-md-4">
+            <img src="service2_icon.png" alt="Service 2" class="img-fluid" />
+            <h3>Service 2</h3>
+            <p>Brief description of Service 2</p>
+          </div>
+          <div class="col-md-4">
+            <img src="service3_icon.png" alt="Service 3" class="img-fluid" />
+            <h3>Service 3</h3>
+            <p>Brief description of Service 3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="min-vh-100" data-aos="fade-up">
+      <div class="container">
+        <h2>Resume</h2>
+        <!-- Education, work experience, skills, and certifications sections go here -->
+        <a href="your_resume.pdf" target="_blank" class="btn btn-primary"
+          >Download Resume</a
+        >
+      </div>
+    </section>
+    <section id="about" class="min-vh-100" data-aos="fade-up">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="project1_thumbnail.jpg"
+              alt="Project 1"
+              class="img-fluid"
+            />
+            <h3>Project 1</h3>
+            <p>Brief description of Project 1</p>
+            <a href="project1_link" class="btn btn-primary">View Project</a>
+          </div>
+          <!-- Add more project columns as needed -->
+        </div>
+      </div>
+    </section>
+    <section id="about" class="min-vh-100" data-aos="fade-up">
+      <div class="container">
+        <h2>Blog</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="blog_post1_thumbnail.jpg"
+              alt="Blog Post 1"
+              class="img-fluid"
+            />
+            <h3>Blog Post 1</h3>
+            <p>Brief excerpt from Blog Post 1</p>
+            <a href="blog_post1_link" class="btn btn-primary">Read More</a>
+          </div>
+          <!-- Add more blog post columns as needed -->
+        </div>
+      </div>
+    </section>
+    <section id="about" class="min-vh-100" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact</h2>
+        <form action="your_form_handler" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-dark text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Odda Wako</h5>
+            <p>Short description or tagline about yourself</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h5>Connect with me</h5>
+            <a
+              href="https://www.linkedin.com/in/your_username/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/your_username"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://twitter.com/your_username"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Add more social media icons and links as needed -->
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <small>&copy; 2023 Odda Wako. All rights reserved.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Include jQuery before the closing body tag -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    
-  </main>
+    <!-- Add smooth scrolling script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
- 
-  
-  <footer>
-    <div class="footer-content">
-        <p>&copy; 2023 Odda Wako. All rights reserved.</p>
-        <p>Website designed by <a href="https://www.linkedin.com/in/odda-wako-a7a722187/">Odda Wako</a></p>
-    </div>
-    <link rel ="stylesheet" href="../css/styles.css">
-</footer>
-<script src="../js/main.js"></script>
-</body>
+<script>
+  $(document).ready(function () {
+    $('a[href^="#"]').on('click', function (event) {
+      event.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').animate({
+        'scrollTop': $target.offset().top
+      }, 1000, 'swing');
+    });
+  });
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
 </html>
