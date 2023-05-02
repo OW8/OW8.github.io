@@ -1,0 +1,346 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #2f2f34;
+  background-image: url('../assets/images/profile.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0.6rem 1rem;
+  margin: 0 0.2rem;
+  font-size: 1rem;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* Home */
+#home {
+  font-size: large;
+  color: #304efc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f1ddea;
+  background-color: transparent;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  align-items: up;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* You can adjust the border radius value or remove it if you don't want rounded corners */
+}
+
+.text-center.h1 {
+  color: #cab4b4;
+  font-style: times new roman;
+  margin-top: -100px;
+}
+
+.custom-heading {
+  color: #ffffff;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.custom-paragraph {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Services */
+#services .row .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#services .fa-3x {
+  margin-bottom: 1rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+margin: 0;
+padding: 0.5em;
+box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+border: none;
+border-radius: 0;
+transition: transform 0.3s;
+}
+
+.card:hover {
+transform: translateY(-10px);
+}
+
+.carousel-inner {
+padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+background-color: #e1e1e1;
+width: 5vh;
+height: 5vh;
+border-radius: 50%;
+top: 50%;
+transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+.card img {
+height: 11em;
+}
+}
+
+.about {
+background-color: #f8f9fa;
+}
+
+.about .img-fluid {
+max-width: 100%;
+max-height: 100%;
+border-radius: circle;
+}
+
+.service .fa-database {
+color: #f0ad4e;
+size: 100px;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+padding: 1rem;
+}
+
+.social-icon {
+color: #333;
+font-size: 1.5rem;
+margin: 0 2rem; /* Increase the margin value to add more space between the icons */
+transition: color 0.3s;
+}
+
+.social-icon:hover {
+color: #007bff; /* You can use your preferred color for the hover effect */
+text-decoration: none;
+}
+
+.section-title {
+font-size: 2rem;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 1rem;
+border-bottom: 2px solid #333;
+display: inline-block;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+font-size: 2.5rem;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 1rem;
+padding-bottom: 0.5rem;
+border-bottom: 3px solid #333;
+display: inline-block;
+}
+
+.resume-section {
+margin-bottom: 2.5rem;
+position: relative;
+padding-left: 2rem;
+}
+
+.resume-section:before {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 2px;
+background-color: #333;
+}
+
+.resume-section h3 {
+font-size: 1.75rem;
+font-weight: bold;
+margin-bottom: 1rem;
+text-transform: uppercase;
+color: #333;
+position: relative;
+padding-left: 0.5rem;
+}
+
+.resume-section h3:before {
+content: '';
+position: absolute;
+left: -1.5rem;
+top: 50%;
+transform: translateY(-50%);
+height: 1.5rem;
+width: 1.5rem;
+background-color: #333;
+border-radius: 50%;
+}
+
+.resume-section p {
+font-size: 1rem;
+line-height: 1.6;
+color: #555;
+margin-left: 0.5rem;
+}
+
+.resume-section strong {
+color: #333;
+}
+
+/* Custom Navbar */
+.custom-navbar {
+  background-color: #343a40;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar:hover {
+  background-color: #212529;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+}
+
+.nav-item .nav-link {
+  padding: 0.6rem 1rem;
+  margin: 0 0.2rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .custom-navbar:hover {
+    background-color: #343a40;
+  }
+}
+#about {
+  position: relative;
+}
+
+#about::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+#about > * {
+  position: relative;
+  z-index: 1;
+}
+
+

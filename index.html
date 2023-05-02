@@ -1,311 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Head -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <style>
-      /* Add your custom styles here */
-      .social-icon:hover {
-        color: #7c92a9;
-        transition: color 0.3s ease-in-out;
-        size: 0caps;
-        background-color: black;
-      }
-    </style>
-    <link
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
   </head>
+
+  <!-- Body -->
   <body>
-    <script>
-      AOS.init();
-    </script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Odda</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar" style="color: #0077b5;">
+      <a class="navbar-brand" href="#">Odda W.</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interest">Interest</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+    
+    <!-- Home section-->
     <section
-      id="home"
-      class="min-vh-100 d-flex align-items-center justify-content-center bg-primary text-red"
+  id="home"
+  class="container-fluid d-flex align-items-center justify-content-center"
+  style="
+    height: 100vh;
+    background-image: url('../assets/images/tianyi-ma-WiONHd_zYI4-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+  "
+>
+  <div class="text-center">
+    <div>
+      <h1 class="custom-heading">Hello, I'm Odda Wako</h1>
+      <p class="custom-paragraph">Welcome to my portfolio, I'm a Computer Science major with a minor in Business.<br> 
+                                          My interests lie at the intersection of technology and business.<br>
+                                                          Explore my projects, and feel free to reach out!</p>
+    
+    <a href="#portfolio" class="btn btn-primary">View my work</a>
+    
+  </div>
+</section>
+
+    <!-- About section -->
+    <section
+      id="about"
+      class="container-fluid d-flex align-items-center"
       style="
-        background-image: url('background.jpg');
-        background-size: cover;
-        background-position: center;
+      background-image: url('../assets/images/akin-cakiner-nkUFXi0JSX8-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      padding: auto;
+      margin-top: auto;
       "
     >
-      <div class="container text-center" data-aos="fade-up">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello, I'm Odda Wako</p></p>
-        <div class="d-flex justify-content-center">
-          <a
-            href="https://www.linkedin.com/in/odda-wako-a7a722187/"
-            target="_blank"
-            class="text-white me-3"
-          >
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a
-            href="https://github.com/OW8"
-            target="_blank"
-            class="text-white me-3"
-          >
-            <i class="fab fa-github fa-2x"></i>
-          </a>
-          <a
-            href="https://twitter.com/odwa5752"
-            target="_blank"
-            class="text-white me-3"
-          >
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/odwa5752/"
-            target="_blank"
-            class="text-white"
-          >
-            <i class="fab fa-instagram fa-2x"></i>
-          </a>
-        </div>
-        <a href="#portfolio" class="btn btn-outline-light mt-3">View my work</a>
-      </div>
-    </section>
-
-    <section id="about" class="min-vh-100" data-aos="fade-up">
       <div class="container">
-        <h2>About Me</h2>
         <div class="row">
-          <div class="col-md-6">
-            <img src="your_photo.jpg" alt="Your Photo" class="img-fluid" />
+          <div class="col-md-4" style="margin: auto; ">
+            <img
+              src="../assets/images/profile.jpeg"
+              alt="Odda Wako"
+              class="img-fluid"
+              style="border-radius: 20%;"
+              opacity="0.01"
+
+            />
+            <div class="social-icons">
+              <a href="https://twitter.com/odwa5257" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter fa-2x" style="color: #55acee; margin-right: 1rem;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/odda-wako-a7a722187/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x" style="color: #0077b5; margin-right: 1rem;"></i>
+              </a>
+              <a href="https://github.com/OW8" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x" style="color: #e0d1d5;"></i>
+              </a>
+            </div>
+            
           </div>
-          <div class="col-md-6">
+          <div class="col-md-8" style="color: #f8f9fa;">
+            <h2>About Me</h2>
             <p>
-              Your bio goes here. Highlight your background, skills, and
-              accomplishments. Include your values, hobbies, or other personal
-              interests.
+              Hi, I am, a passionate software engineer with a strong interest in software development and database design. 
+              I find joy in creating efficient, reliable, and scalable systems that not only meet clients' needs but also 
+              elevate their business to new heights.
+              <br />
+              <br />
+              When I'm not deep in code, I love watching soccer and cheering on my favorite teams. 
+              I also enjoy investing in the stock market, analyzing trends, and diversifying my portfolio for long-term growth. 
+              In my spare time, you'll find me reading articles on various topics, constantly expanding my knowledge and staying
+               up-to-date with the latest industry advancements.
+               <br />
+                <br />
+               With a unique combination of technical expertise and personal interests, I bring a well-rounded approach 
+               to problem-solving and a zest for continuous learning to every project I work on.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section id="about" class="min-vh-100" data-aos="fade-up">
+    <!-- Services section -->
+    <section
+      id="interest"
+      class="container-fluid d-flex align-items-center"
+      style="height: 100vh; background-color: #f8f9fa"
+    >
       <div class="container">
-        <h2>Services</h2>
+        <h2 class="text-center">Interest</h2>
+        <p class="text-center">
+          I'm intereseted in the following areas of Computer Science 
+        </p>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <i class="fas fa-pencil-ruler fa-3x"></i>
+            <h3>Web Development</h3>
+            <p>
+              I develop websites using HTML, CSS, and JavaScript. 
+              I create responsive websites compatible with all devices. 
+              My experience extends to React, Angular, and Vue, and 
+              I've worked with Node.js to develop several RESTful APIs. 
+              Utilizing these technologies, I've developed full-stack applications. Web development is my passion, I love creating beautiful and functional websites.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fas fa-code fa-3x"></i>
+            <h3>Software Engineering</h3>
+            <p>
+              I develop software using Java, Python, and C++. 
+              I've worked with Java to develop desktop applications and Android apps.
+               I've also worked with Python to develop web applications and data science projects.
+                I've worked with C++ to develop desktop applications and games. I have used these 
+                technologies to develop several applications.
+
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <i class="fas fa-database fa-4x"></i>
+            <h3>Database Design</h3>
+            <p>
+              I design and implement databases using MySQL, MongoDB, and PostgreSQL. 
+              My experience includes working with both relational and non-relational databases, 
+              database migration, and data modeling. I've designed and implemented databases for 
+              various applications using MySQL, MongoDB, and PostgreSQL. I was lead database designer 
+              for my senior capstone project.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume section -->
+
+    <section id="resume" class="container mt-5">
+      <h2 class="section-title">Resume</h2>
+    
+      <div class="resume-section">
+        <h3>Education</h3>
+        <p>
+          University of Colorado Boulder - Boulder, CO<br />
+          Bachelor of Science in CS and Minor in Business, May 2023<br />
+          Relevant Coursework: Data Structures, Algorithm, Data Science, Software Development, Computer Systems, AI, Robotics, Operating Systems, Database Management Systems, Marketing, Management, Accounting, and Finance.<br />
+          Member of Google Developer Student Club CU Boulder and National Society of Black Engineers.<br />
+          Scholars program: McNair Scholars Program.<br />
+          Senior Capistone: NexusEdge Education Inc
+        </p>
+      </div>
+    
+      <div class="resume-section">
+        <h3>Technical Skills</h3>
+        <p>
+          <strong>Programming Languages:</strong> Python, C++, Scala, Java, C Programming<br />
+          <strong>Web Development:</strong> HTML, CSS, JavaScript, Node.js, Typescript, React<br />
+          <strong>Databases:</strong> SQL, MongoDB, Cassandra<br />
+          <strong>APIs:</strong> RESTful, JSON, XML, OAuth, API Development and Integration<br />
+          <strong>Tools:</strong> Git, Google Workspace, Postman
+        </p>
+      </div>
+    
+      <div class="resume-section">
+        <h3>Engineering Experience</h3>
+        <p>
+          <strong>Undergraduate Research Assistant</strong> - CU Boulder<br />
+          Improving Human-Robot legibility, May 2022 - Dec 2022<br />
+          Presented research findings at 30th Annual McNair Scholars Research Conference, UMBC<br />
+          Developed environment generators using Python for improved human-robot interactions<br />
+          Modified front-end webpage with HTML, CSS, JavaScript, and React; utilized Node.js for server-side execution<br />
+          Integrated RESTful APIs to access and manipulate data in the virtual environment<br />
+          Established virtual environment using Psiturk and Python to enhance agent's prediction of human motion and goals<br /><br />
+          <strong>Class Project</strong> - CU Boulder<br />
+          Software Development - Web Game Development, Spring 2021<br />
+          Collaborated with a team to design and develop an engaging web game using HTML, CSS, and JavaScript<br />
+          Implemented Agile methodologies for streamlined development<br />
+          Conducted unit testing and debugging to ensure game quality and reliability<br />
+          Developed and integrated APIs for efficient data communication between client and server<br />
+          Utilized Git for version control and seamless code integration<br />
+          Enhanced game performance with caching, lazy loading, and other optimization techniques
+        </p>
+      </div>
+    
+      <div class="resume-section">
+        <h3>Professional Experience</h3>
+        <p>
+          <strong>ABM|Aviation</strong> - Denver, CO<br />
+          Supervisor, October 2020 – Current<br />
+          Coached and provided feedback to a team of 10-15 employees for improved performance<br />
+          Assigned tasks based on employees' strengths, experience, and training<br />
+          Ensured team efficiency and organized workflows to meet daily demands<br />
+          Managed customer complaints, resolved issues, and adapted policies to accommodate changing needs<br /><br />
+          <strong>ABM|Aviation</strong> - Denver, CO<br />
+          Dispatcher, October 2017 - March 2020<br />
+          Maintained accurate records of calls in physical and electronic databases<br />
+          Updated computer tracking system with all necessary changes<br />
+          Fostered effective working relationships with colleagues<br />
+          Assigned agents promptly upon availability
+          </p>
+          
+            </div>
+            <div class="resume-section">
+              <h3>Additional Information</h3>
+              <p>
+                <strong>Interests:</strong> Coding, Soccer, Investing
+              </p>
+            </div>
+            <p>
+              <a href="https://docs.google.com/document/d/13Rtm_fVe8rI1opLowL6_DZmJx46rS-ls/edit?usp=sharing&ouid=114373470183752508981&rtpof=true&sd=true" target="_blank" class="btn btn-primary"
+                >Download Resume</a
+              >
+            </p>
+          </section>
+    <!-- Portfolio section -->
+    <section id="portfolio" class="container-fluid d-flex align-items-center" style="height: 100vh; background-color: #f8f9fa;">
+      <div class="container">
+        <h2 class="text-center">Portfolio</h2>
         <div class="row">
           <div class="col-md-4">
-            <img src="service1_icon.png" alt="Service 1" class="img-fluid" />
-            <h3>Service 1</h3>
-            <p>Brief description of Service 1</p>
+            <div class="card">
+              <img src="../assets/images/markus-winkler-unsplash.jpg" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Skill-Based Job Searching Platform</h5>
+                <p class="card-text">Created a web application for a career services platform aimed at 
+                  assisting students and professionals in identifying their career paths and connecting
+                   them with pertinent resources and job opportunities. The application was developed 
+                   using React, TypeScript, JavaScript, CSS, MySQL, AWS, and Node.js.</p>
+                <a href="www.nexusedge.com" class="btn btn-primary">More about the project</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <img src="service2_icon.png" alt="Service 2" class="img-fluid" />
-            <h3>Service 2</h3>
-            <p>Brief description of Service 2</p>
+            <div class="card">
+              <img src="../assets/images/michal-parzuchowski-unsplash.jpg" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Virtual Poker Game</h5>
+                <p class="card-text">Designed and implemented a virtual poker game that includes both BlackJack 
+                  and Texas Hold'em variants. Developed with JavaScript, Node.js, and HTML, 
+                  and supported by a MySQL database for storing user information, the project showcases a 
+                  range of software development skills and object-oriented techniques to deliver a seamless gaming experience.</p>
+                <a href="https://github.com/tecon321/OOAD_Final_Project.git" class="btn btn-primary">More about the project</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <img src="service3_icon.png" alt="Service 3" class="img-fluid" />
-            <h3>Service 3</h3>
-            <p>Brief description of Service 3</p>
+            <div class="card">
+              <img src="../assets/images/erik-mclean-unsplash.jpg " class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Bit Run Web Game</h5>
+                <p class="card-text">Collaborated with a team of four students to design and develop a web game called Bit-Run. 
+                  The game's frontend was built using Unity, while JavaScript, HTML, CSS, EJS, Node.js, PostgreSQL for database management, 
+                  and Heroku were utilized for the backend and web application components. Bit Run is an open platform game developed using Unity</p>
+                <a href="https://bit-run.herokuapp.com/" class="btn btn-primary">More about the project</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="about" class="min-vh-100" data-aos="fade-up">
+    <!-- Contact section -->
+    <section
+      id="contact"
+      class="container-fluid d-flex align-items-center"
+      style="height: 100vh; background-color: #f8f9fa"
+    >
       <div class="container">
-        <h2>Resume</h2>
-        <!-- Education, work experience, skills, and certifications sections go here -->
-        <a href="your_resume.pdf" target="_blank" class="btn btn-primary"
-          >Download Resume</a
-        >
-      </div>
-    </section>
-    <section id="about" class="min-vh-100" data-aos="fade-up">
-      <div class="container">
-        <h2>Portfolio</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="project1_thumbnail.jpg"
-              alt="Project 1"
-              class="img-fluid"
-            />
-            <h3>Project 1</h3>
-            <p>Brief description of Project 1</p>
-            <a href="project1_link" class="btn btn-primary">View Project</a>
+        <h2 class="text-center">Contact</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" />
           </div>
-          <!-- Add more project columns as needed -->
-        </div>
-      </div>
-    </section>
-    <section id="about" class="min-vh-100" data-aos="fade-up">
-      <div class="container">
-        <h2>Blog</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="blog_post1_thumbnail.jpg"
-              alt="Blog Post 1"
-              class="img-fluid"
-            />
-            <h3>Blog Post 1</h3>
-            <p>Brief excerpt from Blog Post 1</p>
-            <a href="blog_post1_link" class="btn btn-primary">Read More</a>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" />
           </div>
-          <!-- Add more blog post columns as needed -->
-        </div>
-      </div>
-    </section>
-    <section id="about" class="min-vh-100" data-aos="fade-up">
-      <div class="container">
-        <h2>Contact</h2>
-        <form action="your_form_handler" method="POST">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              name="name"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              name="message"
-              rows="3"
-              required
-            ></textarea>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </section>
+    <!-- Footer -->
     <footer class="bg-dark text-white py-3">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <h5>Odda Wako</h5>
-            <p>Short description or tagline about yourself</p>
+            <p>Thank you for visiting my portfolio!</p>
           </div>
-          <div class="col-md-6 text-md-end">
+          <div class="col-md-6 text-center">
             <h5>Connect with me</h5>
-            <a
-              href="https://www.linkedin.com/in/your_username/"
-              target="_blank"
-              class="text-white me-2"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/your_username"
-              target="_blank"
-              class="text-white me-2"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://twitter.com/your_username"
-              target="_blank"
-              class="text-white me-2"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <!-- Add more social media icons and links as needed -->
-          </div>
+          <div class="social-icons">
+              <a href="https://twitter.com/odwa5257" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter fa-2x" style="color: #55acee; margin-right: 1rem;"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/odda-wako-a7a722187/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin fa-2x" style="color: #0077b5; margin-right: 1rem;"></i>
+              </a>
+              <a href="https://github.com/OW8" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github fa-2x" style="color: #e0d1d5;"></i>
+              </a>
+            </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-12 text-center">
-            <small>&copy; 2023 Odda Wako. All rights reserved.</small>
+        <div class="row mt-3" style="align-items: center;">
+          <div class="col-12 text-center"
+          style="
+          align-items: center;"
+          >
+            <small style="align-items: center;">&copy; 2023 Odda Wako. All rights reserved.</small>
           </div>
         </div>
       </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <!-- Include jQuery before the closing body tag -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Add smooth scrolling script -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script>
-  $(document).ready(function () {
-    $('a[href^="#"]').on('click', function (event) {
-      event.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').animate({
-        'scrollTop': $target.offset().top
-      }, 1000, 'swing');
-    });
-  });
-</script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--js -->
+    <script src="../assets/js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
